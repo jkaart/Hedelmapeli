@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Hedelmäpeli</title>
+</head>
+
+<body>
+    <div id="game">
+        <div id="notification">
+            <h3></h3>
+            <span></span>
+        </div>
+        <h1>Hedelmäpeli</h1>
+        <button id="showWinTable">Näytä voittotaulu</button>
+        <div id="winTableDiv">
+            <h4>Voittotaulu</h4>
+        </div>
+
+        <div id="moneyBetDiv">
+            <button id="changeBet">Muuta panosta</button>
+            <button id="return">Palaa</button>
+            <h3 id="moneyTitle"></h3>
+            <div id="moneyDiv">
+                <h4 id="moneyLbl">Rahaa</h4>
+                <h4 id="money"></h4>
+            </div>
+            <div id="betDiv">
+                <h4>Panos</h4>
+                <h4 id="bet"></h4>
+            </div>
+            <div id="addMoney">
+                <button id="add">Lisää</button>
+                <button id="remove">Vähennä</button>
+            </div>
+        </div>
+
+        <div id="slots">
+            <div id="slot0">
+                <img id="slot0Img" src="./images/w0.png"></img>
+                <button id="slot0Btn" disabled>Lukitse</button>
+            </div>
+            <div id="slot1">
+                <img id="slot1Img" src="./images/w0.png"></img>
+                <button id="slot1Btn" disabled>Lukitse</button>
+            </div>
+            <div id="slot2">
+                <img id="slot2Img" src="./images/w0.png"></img>
+                <button id="slot2Btn" disabled>Lukitse</button>
+            </div>
+            <div id="slot3">
+                <img id="slot3Img" src="./images/w0.png"></img>
+                <button id="slot3Btn" disabled>Lukitse</button>
+            </div>
+        </div>
+        <div id="btnDiv">
+            <button id="spin">Pelaa</button>
+            <button id="newRound">Uusi kierros</button>
+            <button id="newGame">Uusi peli</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

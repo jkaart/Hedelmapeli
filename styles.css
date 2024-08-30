@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    background-color: honeydew;
+}
+
+button {
+    border: 1px solid #bec4c6;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+#game {
+    text-align: center;
+}
+
+#notification {
+    padding: 10px;
+    text-align: left;
+    display: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    left: 37.5%;
+    width: 25%;
+    z-index: 9999;
+}
+
+#notification h3 {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+#notification span {
+    margin-left: 10px;
+}
+
+#moneyDiv,
+#betDiv {
+    text-align: right;
+}
+
+#showWinTable {
+    margin-top: 3px;
+    margin-left: 10px;
+    float: left;
+}
+
+#moneyDiv>*,
+#betDiv>* {
+    display: inline-block;
+    margin: 0;
+}
+
+#moneyTitle {
+    display: block;
+    margin: 0;
+}
+
+#moneyBetDiv {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#addMoney {
+    display: inline-block;
+    text-align: right;
+}
+
+#return,
+#newRound,
+#newGame {
+    display: none;
+}
+
+#newGame,
+#spin,
+#newRound {
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+}
+
+#changeBet {
+    display: inline-block;
+    visibility: hidden;
+}
+
+#slots {
+    height: 120px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slot0Img,
+#slot1Img,
+#slot2Img,
+#slot3Img {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+    width: 90px;
+    height: 90px;
+}
+
+#slot0,
+#slot1,
+#slot2,
+#slot3 {
+    display: inline-block;
+    width: 90px;
+    height: 120px;
+}
+
+#btnDiv {
+    margin-top: 20px;
+}
+
+#winTableDiv {
+    margin-left: 10px;
+    position: absolute;
+    display: none;
+    border: 1px black solid;
+    border-radius: 3px;
+    margin-top: 25px;
+    background-color: white;
+    text-align: left;
+}
+
+#winTableDiv table tr td {
+    vertical-align: middle;
+}
+
+#winTableDiv table tr td img {
+    height: 40px;
+}
+
+@media only screen and (max-width: 380px) {
+
+    #slot0,
+    #slot1,
+    #slot2,
+    #slot3 {
+        height: 120px;
+        width: 80px;
+    }
+
+    #slot0Img,
+    #slot1Img,
+    #slot2Img,
+    #slot3Img {
+        width: 80px;
+    }
+
+    #game {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    #game {
+        /* border: solid 1px black; */
+        margin-top: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding-bottom: 10px;
+    }
+
+    #moneyBetDiv {
+        position: static;
+        float: right;
+    }
+
+    #showWinTable {
+        position: absolute;
+    }
+
+    #showWinTable,
+    #winTableDiv {
+        left: 26%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1360px) {
+    #notification {
+        width: 80%;
+        left: 10%;
+    }
+}
+
+/* @media only screen and (max-width: 1023px) {
+    #moneyBetDiv {
+        position: static;
+        right: 1vw;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #moneyBetDiv {
+        position: static;
+    }
+} */
